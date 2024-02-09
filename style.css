@@ -1,47 +1,42 @@
-.daily-section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-   
+section{
+  height: 750px;
 }
 
-
-.image-container {
-    width: 335px;
-    height: 269px;
-    overflow: hidden;
-    position: relative;
+.section1 {
+    background-color: grey;
 }
 
-.daily-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top;
-    position: absolute;
-    top: 0;
-    left: 0;
-    
+.section2 {
+    background-color: aquamarine;
 }
 
-.daily-card {
-    background-color: black;
-   
-    justify-content: center;
-    flex-wrap: wrap;
-    border-radius: 30px;
-    text-align: left;
+.section3 {
+    background-color: burlywood;
 }
 
-.daily-icon {
-
+.section4 {
+    background-color: brown;
 }
 
-.daily-title {
-    color: beige;
+#toTop {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background-image: url(./icon.svg);
+    background-size: 13px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #7E847F;
+    border: none;
+    border-radius: 50%;
 }
 
-.daily-text {
- color: beige;
+@media screen and (min-width: 1408px) {
+    #toTop {
+        width: 100px;
+        height: 100px;
+        background-size: 33px;
+    }
 }
-
