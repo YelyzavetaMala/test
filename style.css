@@ -1,7 +1,6 @@
 .daily-section {
     display: flex;
     justify-content: center;
-    gap: 72px;
     flex-wrap: wrap;
    
 }
