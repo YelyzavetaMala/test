@@ -1,7 +1,7 @@
 let toTop = document.getElementById('toTop');
 toTop.style.display = 'none';
 window.addEventListener('scroll', () => {
-    if (this.scrollY > 500) {
+    if (this.scrollY > 200) {
         toTop.style.display = 'block';
     } else {
         toTop.style.display = 'none';
