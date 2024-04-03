@@ -1,65 +1,97 @@
-/*#toTop {
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
-    width: 40px;
-    height: 40px;
-    background-image: url(./icon.svg);
-    background-size: 13px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #7E847F;
-    border: none;
-    border-radius: 50%;
+.quote-section {
+    background-color: #F0F2F5;
+
 }
-*/
-
-.title {
-    text-align: center;
-    font-family: Playfair Display;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 1.3;
-    letter-spacing: 0.02em;
-    max-width: 320px;
-}
-
-.li {
-    margin-bottom: 24px;
-}
-
-.list {
-    width: 320px;
-}
-
-
-ul li::marker {
-    color: red;
-}
-
 
 .quote-card {
-    background-color: #F0F2F5;
-    padding: 64px 20px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+
+    @media (768px<=width) {
+        margin-top: 78px;
+    }
+
+    @media (1440px<=width) {
+        margin-top: 74px;
+    }
+}
+
+.quote-text-accent {
+    color: #DC3353;
+    font-family: Hurricane;
+    text-transform: none;
+    font-size: 52px;
+    letter-spacing: 0.02em;
+    position: absolute;
+    top: -60px;
+    left: 2px;
+    z-index: 2;
+    max-width: 320px;
+    max-height: 52px;
+
+    @media (768px<=width) {
+        font-size: 96px;
+        letter-spacing: 0.02em;
+        top: -99px;
+        left: 0px;
+        max-width: 568px;
+        max-height: 76px;
+    }
+
+    @media (1440px<=width) {
+        top: -100px;
+        left: 175px;
+        max-width: 568px;
+        max-height: 76px;
+    }
 }
 
 .quote-text {
-    font-family: Playfair Display; 
-    font-weight: 600; 
+    position: relative;
+    font-family: Playfair Display;
+    font-weight: 600;
     font-size: 32px;
-    text-align: center;
-    
-}
-.quote-text-accent {
-    color: red;
-    font-family: Hurricane;
-}
+    text-transform: uppercase;
+    line-height: 1.38;
+    letter-spacing: 0.01em;
+    max-width: 270px;
 
+    @media (768px<=width) {
+        font-size: 56px;
+        line-height: 1.215;
+        letter-spacing: -0.01em;
+        max-width: 704px;
+        margin-left: 0px;
+    }
 
-@media screen and (min-width: 1408px) {
-    #toTop {
-        width: 100px;
-        height: 100px;
-        background-size: 33px;
+    @media (1440px<=width) {
+        letter-spacing: 0.01em;
+        max-width: 1008px;
     }
 }
+
+.quote-text-string {
+    @media (768px<=width) {
+        padding-right: 180px;
+        padding-left: 93px;
+        letter-spacing: 0.015em;
+    }
+
+    @media (1440px<=width) {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+
+
+
+
+
+
+
+
